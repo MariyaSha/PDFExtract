@@ -1,7 +1,7 @@
 # PDFExtract
 a Tkinter GUI application that extracts text and images from a given PDF file 
 <br>
-<img src="https://user-images.githubusercontent.com/32107652/107867937-577b8680-6e34-11eb-9d42-d58b278e9456.jpg" style="width:600px;">
+<img src="https://user-images.githubusercontent.com/32107652/107867937-577b8680-6e34-11eb-9d42-d58b278e9456.jpg" style="width:600;">
 <br>
 <b>Author:</b> Mariya Sha
 <br>
