@@ -5,6 +5,7 @@ from tkinter.filedialog import askopenfile
 from functions import display_logo, display_textbox, extract_images
 
 root = Tk()
+root.geometry('+%d+%d'%(350,10)) #place GUI at x=350, y=10
 
 #header area - logo & browse button
 header = Frame(root, width=800, height=175, bg="white")
