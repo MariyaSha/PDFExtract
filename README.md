@@ -28,3 +28,8 @@ It might take me a bit of time, but I will get there and I will try to help.
 <br>
 <br>
 Enjoy!
+<br>
+<br>
+<b>Special Thanks to aakos23</b> for solving issue #2!
+<br>
+"filetypes" instead of "filetype" when you browsing for a PDF file is the only way to go if you experiance errors or crashes!
