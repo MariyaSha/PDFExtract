@@ -17,7 +17,7 @@ main_content.grid(columnspan=3, rowspan=2, row=2)
 
 def open_file():
     browse_text.set("loading...")
-    file = askopenfile(parent=root, mode='rb', filetype=[("Pdf file", "*.pdf")])
+    file = askopenfile(parent=root, mode='rb', filetypes=[("Pdf file", "*.pdf")])
     if file:
         read_pdf = PyPDF2.PdfFileReader(file)
         page = read_pdf.getPage(0)
