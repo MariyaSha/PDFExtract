@@ -78,7 +78,7 @@ def open_file():
 
     #load a PDF file
     file = askopenfile(parent=root, mode='rb', filetypes=[("Pdf file", "*.pdf")])
-      if file:
+    if file:
         read_pdf = PyPDF2.PdfFileReader(file)
         #select a page
         page = read_pdf.getPage(0)
@@ -150,7 +150,7 @@ def open_file():
         copyText_btn.grid(row=3,column=0)
         saveAll_btn.grid(row=3,column=1)
         save_btn.grid(row=3,column=2)
-      else: 
+    else: 
         browse_text.set("Changed your mind?") # When user CANCEL  the open window for selectig file, display this message
         browse_btn.after(3000, Dyn)        # then after 3 seconds calls the Dyn func. to change the displayed txt on button
         
