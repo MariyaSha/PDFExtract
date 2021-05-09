@@ -14,6 +14,12 @@ displayed_img = []
 root = Tk()
 root.geometry('+%d+%d'%(350,10)) #place GUI at x=350, y=10
 
+#Dynamically change display BROWSE button label call function.
+def Dyn():
+    txt= browse_text.set("Do it !")  
+    browse_btn.config(textvariable = txt )
+    
+    
 #ARROW BUTTONS FUNCTIONALITY
 #right arrow
 def right_arrow(all_images, selected_img, what_text):
@@ -72,7 +78,7 @@ def open_file():
 
     #load a PDF file
     file = askopenfile(parent=root, mode='rb', filetypes=[("Pdf file", "*.pdf")])
-    if file:
+      if file:
         read_pdf = PyPDF2.PdfFileReader(file)
         #select a page
         page = read_pdf.getPage(0)
@@ -144,7 +150,10 @@ def open_file():
         copyText_btn.grid(row=3,column=0)
         saveAll_btn.grid(row=3,column=1)
         save_btn.grid(row=3,column=2)
-
+      else: 
+        browse_text.set("Changed your mind?") # When user CANCEL  the open window for selectig file, display this message
+        browse_btn.after(3000, Dyn)        # then after 3 seconds calls the Dyn func. to change the displayed txt on button
+        
 #BEGIN INITIAL APP COMPONENTS
 display_logo('logo.png', 0, 0)
 
